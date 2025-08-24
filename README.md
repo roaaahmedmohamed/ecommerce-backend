@@ -32,9 +32,9 @@ It includes authentication, role-based authorization, and basic features for man
 
 
 🔑 Auth
-POST/   http://localhost:3000/register   → Register new user
+POST/   http://localhost:3000/users/register   → Register new user
 
-POST /  http://localhost:3000/login  → Login and get token
+POST /  http://localhost:3000/users/login  → Login and get token
 
 👤 Users
 
