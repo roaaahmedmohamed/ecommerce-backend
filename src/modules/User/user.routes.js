@@ -17,8 +17,9 @@ userRoutes.use(express.json());
 
 
 
-userRoutes.post("/register", register); // POST http://localhost:3000/register
-userRoutes.post("/login", login); // POST http://localhost:3000/login
+userRoutes.post("/register", register); // POST http://localhost:3000/users/register
+userRoutes.post("/login", login); // POST http://localhost:3000/users/login
+
 
 // Protected
 userRoutes.get("/", authMiddleware, authorizeRole("admin"), getAllUsers); // GET http://localhost:3000/users
